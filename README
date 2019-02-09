@@ -1,0 +1,12 @@
+yathpool -- Yet another thread pool
+
+Created for own purposes.
+
+======= BUILD AND INSTALL =======
+
+1) mkdir build
+2) cd build
+3) cmake .. -DCMAKE_INSTALL_PREFIX={YOUR_PREFIX} && make install
+4) ...
+5) PROFIT!
+
