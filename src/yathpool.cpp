@@ -58,6 +58,7 @@ yathpool::~yathpool()
     std::cerr << logPrefix << "Destroying thread pool\n";
 #endif
     destroyFlag_.store(true);
+    waitCondition_.notify_all();
     for (auto& th : threads_)
     {
         if(th.joinable())
